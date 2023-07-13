@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon" />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>front-end starter kit</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <a href="#" class="nav__logo"> Company </a>
+            <li class="dropdown">
+              <a href="#about">ABOUT</a>
+              <div class="dropdown-content">
+                <a href="#">HISTORY</a>
+                <a href="#">VISION MISSION</a>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="#ourwork" class="nav__link active-link">
+                <span>OUR WORK</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#ourteam" class="nav__link active-link">
+                <span>OUR TEAM</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link active-link">
+                <span>CONTACT</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="assets/img/bg.jpg" style="width: 100%" />
+        <div class="container">
+          <div class="text-block">
+            <p>
+              THIS IS A PLACE WHERE TECHNOLOGY & <br />
+              CREATIVITY FUSED INTO DIGITAL CHEMISTRY
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/img/about-bg.jpg" style="width: 100%" />
+        <div class="text-block">
+          <p>
+            WE DON'T HAVE THE BEST BUT WE HAVE THE<br />
+            GREATEST TEAM
+          </p>
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <!--==================== OUR VALUES ====================-->
+    <section class="values-section">
+      <h2>OUR VALUES</h2>
+      <div class="container">
+        <div class="card">
+          <img src="assets/img/card1.png" alt="Image 1" />
+          <div class="center"></div>
+        </div>
+        <div class="card">
+          <img src="assets/img/card2.png" alt="Image 2" />
+        </div>
+        <div class="card">
+          <img src="assets/img/card3.png" alt="Image 3" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <h2>CONTACT US</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label class="name" for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label class="email" for="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label class="nmessages" for="message">Message</label>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
